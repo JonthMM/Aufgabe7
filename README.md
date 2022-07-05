@@ -12,6 +12,8 @@ The other website is a location creator, where the user can input new locations 
 enter a adress which will get converted to GeoJSON via forward geocoding or by using the browser location. These locations can also be updated
 or deleted when they are stored in the mongoDB.
 
+Link to the image on dockerhub: https://hub.docker.com/repository/docker/jonthnm/aufgabe7
+
 <h2>Tutorial</h2>
 
 For the forward geocoding you need a MapBox access Token at var access_token = "access Token" in /public/locationcreationmap
