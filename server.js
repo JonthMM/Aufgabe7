@@ -43,7 +43,7 @@ const port = process.env.PORT || 5000;
     app.locals.dbConnection = await mongodb.MongoClient.connect('mongodb://mongo:27017', {  //hier auch mongo anstelle von localhost, weil wir nicht mehr local darauf zugreifen können
       useNewUrlParser: true
     });
-    // defining what collection to use (here: locations, which will automatically be created by mongoDB and can be inspected locally via MongoDBCompass)
+    // defining what collection to use (here: locations, which will automatically be created by mongoDB and can be inspected locally via MongoDBCompass or via mongo-express)
     app.locals.db = await app.locals.dbConnection.db('locations');
     console.log('Using db: ' + app.locals.db.databaseName);
   } catch (error) {
