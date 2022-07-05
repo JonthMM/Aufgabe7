@@ -1,12 +1,12 @@
 {
-  "name": "aufgabe6",
+  "name": "aufgabe7",
   "version": "1.0.0",
-  "description": "</strong></h1>Aufgabe 6</strong></h1>",
+  "description": "</strong></h1>Aufgabe 7</strong></h1>",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jonathan Mader, matr.Nr.: 502644 - Erkam Dogan",
+  "author": "Jonathan Mader, Erkam Dogan",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
