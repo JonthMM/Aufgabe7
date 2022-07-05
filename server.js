@@ -1,8 +1,7 @@
 /**
- * Aufgabe 6, Geosoft 1, SoSe 2022
+ * Aufgabe 7, Geosoft 1, SoSe 2022
  * @author Jonathan Mader, matr.Nr.: 502644
  * @author Erkam Dogan, matr.Nr.: 508236
- * @author Kieran Galbraith, matr.Nr.: 453493
  */
 //****various Linter configs****
 // jshint esversion: 6
@@ -37,22 +36,19 @@ const port = process.env.PORT || 5000;
  * @function to connect to the mongoDB database
  */
 
-(async () => {
-
+ async function connectMongoDB() {
   try {
-    // connecting to mongodb via standard port 27017
-    app.locals.dbConnection = await mongodb.MongoClient.connect('mongodb://localhost:27017', {
-      useNewUrlParser: true
-    });
-    // defining what collection to use (here: locations, which will automatically be created by mongoDB and can be inspected locally via MongoDBCompass)
-    app.locals.db = await app.locals.dbConnection.db('locations');
-    console.log('Using db: ' + app.locals.db.databaseName);
-  } catch (error) {
-    console.dir(error);
-    setTimeout(5000);
+      app.locals.dbConnection = await mongodb.MongoClient.connect("mongodb://mongo:27017", { useNewUrlParser: true });
+      app.locals.db = await app.locals.dbConnection.db("itemdb");
+     console.log("Using db: " + app.locals.db.databaseName);
   }
-
-})();
+  catch (error) {
+      console.dir(error)
+      setTimeout(connectMongoDb, 5000)
+  }
+}
+//Start connecting
+connectMongoDB()
 
 
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
@@ -120,4 +116,4 @@ app.put('/update-input', (req, res) => {
 // listen on port 5000
 app.listen(port,
   () => console.log(`Example app
-      listening at http://localhost:${port}`));
+      listening at http://mongo:${port}`));
