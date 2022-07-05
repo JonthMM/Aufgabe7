@@ -21,7 +21,7 @@ For the forward geocoding you need a MapBox access Token at var access_token = "
 To start the application with Docker go to the terminal of your IDE and type the command <br>
 $ docker-compose up
 
-It will then take a while to download the services but after a few moments you are able to access mono-express at 
+It will then take a while to download the services but after a few moments you are able to access mongo-express at 
 http://localhost:8081/
 
 and the html websites at <br>
