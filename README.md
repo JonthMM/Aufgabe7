@@ -18,13 +18,13 @@ Link to the image on dockerhub: https://hub.docker.com/repository/docker/jonthnm
 
 For the forward geocoding you need a MapBox access Token at var access_token = "access Token" in /public/locationcreationmap
 
-To start the application go to the terminal of your IDE and type the command
+To start the application go to the terminal of your IDE and type the command <br>
 $ docker-compose up
 
 It will then take a while to download the services but after a few moments you are able to access mono-express at 
 http://localhost:8081/
 
-and the html websites at 
+and the html websites at <br>
 http://localhost:5000/
 
 
