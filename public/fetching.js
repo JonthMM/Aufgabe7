@@ -2,7 +2,6 @@
  * Aufgabe 6, Geosoft 1, SoSe 2022
  * @author Jonathan Mader, matr.Nr.: 502644
  * @author Erkam Dogan, matr.Nr.: 508236
- * @author Kieran Galbraith, matr.Nr.: 453493
  */
 
 //****various Linter configs****
@@ -21,8 +20,8 @@ var allDepartures = [];
 haltestellen();
 
 // creating a title for our website (and displaying it with alert pop up)
-document.title = "This is Assignement 6 for Geosoftware 1 by Jonathan Mader, Erkam Dogan and Kieran Galbraith";
-alert(document.title);
+document.title = "This is Assignement 6 for Geosoftware 1 by Jonathan Mader, Erkam Dogan";
+
 
 
 /**
