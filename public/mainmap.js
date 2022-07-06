@@ -2,7 +2,6 @@
  * Aufgabe 6, Geosoft 1, SoSe 2022
  * @author Jonathan Mader, matr.Nr.: 502644
  * @author Erkam Dogan, matr.Nr.: 508236
- * @author Kieran Galbraith, matr.Nr.: 453493
  */
 
 //****various Linter configs****
